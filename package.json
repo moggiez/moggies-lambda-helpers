@@ -1,0 +1,42 @@
+{
+  "name": "@moggiez/moggies-lambda-helpers",
+  "version": "0.2.0",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@moggiez"
+  },
+  "description": "Helper functions for AWS Lambdas.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moggiez/moggies-lambda-helpers.git"
+  },
+  "keywords": [
+    "moggies",
+    "moggiez",
+    "moggies.io"
+  ],
+  "author": "Georgi Stavrev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moggiez/moggies-lambda-helpers/issues"
+  },
+  "homepage": "https://github.com/moggiez/moggies-lambda-helpers#readme",
+  "devDependencies": {
+    "jest": "^27.0.5",
+    "prettier": "2.3.2"
+  },
+  "scripts": {
+    "test": "jest --coverage --collectCoverageFrom='src/**/*.js' --silent --ci --testLocationInResults --json --outputFile='report.json'",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/**/__tests__/*.test.js"
+    ],
+    "testPathIgnorePatterns": [
+      "__tests__/helpers.js"
+    ]
+  }
+}
