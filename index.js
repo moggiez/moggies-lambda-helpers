@@ -28,6 +28,7 @@ exports.getRequestFromEvent = (event) => {
 
   return {
     httpMethod: httpMethod,
+    resource: event.resource,
     body: JSON.parse(event.body),
     pathParameters: event.pathParameters,
     getPathParamAtIndex: getPathParamAtIndex,
