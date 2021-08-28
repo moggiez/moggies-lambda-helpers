@@ -3,6 +3,8 @@ const defaultHeaders = {
   "Access-Control-Allow-Origin": "*",
 };
 
+const { InternalApiClient } = require("./lambda");
+
 exports.getResponseFn = (callback) => {
   return (status, body, headers) => {
     const httpResponse = {
@@ -34,3 +36,5 @@ exports.getRequestFromEvent = (event) => {
     getPathParamAtIndex: getPathParamAtIndex,
   };
 };
+
+exports.InternalApiClient = InternalApiClient;
