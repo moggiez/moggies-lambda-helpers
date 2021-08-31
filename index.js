@@ -4,6 +4,7 @@ const defaultHeaders = {
 };
 
 const { InternalApiClient } = require("./lambda");
+const { HttpClient } = require("./http");
 
 exports.getResponseFn = (callback) => {
   return (status, body, headers) => {
@@ -38,3 +39,4 @@ exports.getRequestFromEvent = (event) => {
 };
 
 exports.InternalApiClient = InternalApiClient;
+exports.HttpClient = HttpClient;

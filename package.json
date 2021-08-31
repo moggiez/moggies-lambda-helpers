@@ -1,6 +1,6 @@
 {
   "name": "@moggiez/moggies-lambda-helpers",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": false,
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@moggiez"
@@ -38,5 +38,8 @@
     "testPathIgnorePatterns": [
       "__tests__/helpers.js"
     ]
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }
